@@ -1,0 +1,34 @@
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --accent:#7c5cff;
+  --muted:#9aa7bf;
+  --glass: rgba(255,255,255,0.04);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;}
+body{background:linear-gradient(180deg,#071026 0%, #071426 45%, #041423 100%);color:#e6eefb;display:flex;align-items:center;justify-content:center;padding:28px;}
+
+.app{width:100%;max-width:1100px;background:linear-gradient(180deg, rgba(255,255,255,0.03), transparent);border-radius:14px;padding:20px;box-shadow: 0 8px 30px rgba(2,6,23,0.7);border:1px solid rgba(255,255,255,0.03);}
+
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:8px 4px 18px 4px}
+.brand{font-weight:700;font-size:20px;color:var(--accent)}
+.subtitle{font-size:13px;color:var(--muted)}
+.note{color:#f0c; font-weight:600}
+
+.controls{padding:6px 4px 16px 4px}
+.input-row{display:flex;gap:10px}
+.input-row input{flex:1;padding:12px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:var(--glass);color:inherit;outline:none}
+.input-row .btn{padding:11px 18px;border-radius:10px;border:none;background:linear-gradient(90deg,var(--accent),#46e3ff);color:#061024;cursor:pointer;font-weight:600}
+.btn{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);padding:8px 12px;border-radius:8px;cursor:pointer}
+.options-row{display:flex;gap:10px;margin-top:10px}
+.options-row input{flex:1;padding:10px;border-radius:8px;background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--muted)}
+.options-row select{padding:10px;border-radius:8px;background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--muted)}
+.hint{color:var(--muted);font-size:13px;margin-top:10px}
+
+.viewer{margin-top:14px;border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,0.03);height:640px;background:#061322}
+.viewer iframe{width:100%;height:100%;border:0;background:white}
+
+.footer{margin-top:14px;color:var(--muted);font-size:13px;text-align:center}
+code{background:rgba(255,255,255,0.03);padding:2px 6px;border-radius:6px;color:#cfe}
