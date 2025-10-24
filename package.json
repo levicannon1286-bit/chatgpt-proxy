@@ -1,0 +1,13 @@
+{
+  "name": "netlify-proxy",
+  "version": "1.0.0",
+  "description": "HTML rewriting proxy for Netlify Functions",
+  "main": "netlify/functions/proxy.js",
+  "scripts": {
+    "start": "netlify dev"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "undici": "^5.0.0"
+  }
+}
