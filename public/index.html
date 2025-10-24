@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>✨ Prism Proxy — browse anywhere</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand">Prism Proxy</div>
+      <div class="subtitle">A clean proxy — <span class="note">use responsibly</span></div>
+    </header>
+
+    <section class="controls">
+      <div class="input-row">
+        <input id="urlInput" placeholder="https://example.com" />
+        <button id="goBtn" class="btn primary">Go</button>
+      </div>
+
+      <div class="options-row">
+        <input id="keyInput" placeholder="API key (optional)" />
+        <select id="displayMode">
+          <option value="iframe">Open in iframe</option>
+          <option value="newtab">Open in new tab</option>
+        </select>
+        <button id="openBtn" class="btn">Open</button>
+      </div>
+
+      <p class="hint">Tip: Deploy the function to Netlify and keep the frontend static on Tiiny or Netlify. If you host frontend on Tiiny, set PROXY_BASE to your Netlify site host in app.js.</p>
+    </section>
+
+    <section class="viewer">
+      <iframe id="frame" sandbox="allow-forms allow-same-origin allow-scripts" src=""></iframe>
+    </section>
+
+    <footer class="footer">Built with ❤️ — configure API key in Netlify env var <code>PROXY_KEY</code> to lock access.</footer>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
